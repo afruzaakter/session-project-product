@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css"
+import Test from './Components/Test/Test';
+// import Menubar from './Components/Menubar/Menubar';
 
 function App() {
+
+  const count = () => {
+    console.log('hello paici',count);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="text-primary">Hello</h1>
+
+      {/* <Menubar country = {'Bangladesh'}></Menubar> */}
+      
+      <Test count= {count} ></Test>
     </div>
   );
 }
